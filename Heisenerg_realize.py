@@ -61,9 +61,9 @@ def lanczos(hm,matrix_dim):
     return eig_value
 
 if __name__ == '__main__':
-    print("Please printHeisenberg Chain n=")
+    print("type the Chain number:\n")
     n=int(input())
-    print("Heisenberg Chain,n=",n)
+#    print("Heisenberg Chain,n=",n)
     t1=time.time()
     matrix_basis,basis_matrix=generate_map()
     matrix_dim=np.size(matrix_basis)
