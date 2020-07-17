@@ -29,17 +29,16 @@ Created on Wed Jul  8 19:55:16 2020
 # =============================================================================
 import numpy.matlib
 import numpy as np
-c=0
-a = np.array([[2,0],[1,2]])
-b = np.array([[1,2],[3,4]])
-while True:
-    print (a)
-    print (b)
-    print(a*b)
-    c +=1
-    if(c==6):
-        break
-    
+c = np.eye(2)
+d = np.eye(2)
+e = np.eye(2)
+a = np.array([[3,1],[0,2]])
+b = np.array([[1,-1],[0,1]])
+c = np.dot(a, b)#
+d = np.linalg.inv(b)
+e = np.dot(d,c)
+print(e)
+
 
 #print(np.dot(a,b))
 
