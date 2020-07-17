@@ -4,7 +4,7 @@ dddd
 @author:  Jiaming Wang
 """
 import numpy as np
-import scipy as sp
+#import scipy as sp
 np.set_printoptions(threshold=np.inf)
 from scipy import sparse
 from scipy.linalg import eigh_tridiagonal as tqli
