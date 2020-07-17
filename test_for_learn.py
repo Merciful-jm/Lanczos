@@ -3,9 +3,6 @@
 Created on Wed Jul  8 19:55:16 2020
 @author: Jiaming Wang
 """
-import numpy as np
-import scipy as sp
-
 
 # =============================================================================
 # a=np.array([[1,2],
@@ -30,10 +27,19 @@ import scipy as sp
 #         if(A[i]==A[j]):
 #             Hami[a,a]  = Hami[a,a] + 1/4
 # =============================================================================
-# =============================================================================
-# L=8
-# J=1.0
-# shape = (L, L)
-# spins = np.full(shape,1)
-# S= -np.sum(    J * spins * np.roll(spins, 1, axis=0) +    J * spins * np.roll(spins, -1, axis=0) +    J * spins * np.roll(spins, 1, axis=1) +    J * spins * np.roll(spins, -1, axis=1)  )/2
-# =============================================================================
+import numpy.matlib
+import numpy as np
+c=0
+a = np.array([[2,0],[1,2]])
+b = np.array([[1,2],[3,4]])
+while True:
+    print (a)
+    print (b)
+    print(a*b)
+    c +=1
+    if(c==6):
+        break
+    
+
+#print(np.dot(a,b))
+
